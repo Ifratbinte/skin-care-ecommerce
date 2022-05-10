@@ -1019,7 +1019,7 @@ a.btn-bg{
 
 .lang-form {
     position: absolute;
-    top: 67px;
+    top: 42px;
     left: -250px;
     z-index: 10;
     background: white;
@@ -1121,11 +1121,12 @@ a.btn-bg{
 
 .logo {
     padding: 4px 0px;
+    margin-top: 20px;
 }
 
 .logo a {
     display: inline-block;
-    width: 80px;
+    width: 150px;
 }
 
 .header-search-form {
@@ -3653,7 +3654,7 @@ td.total h6 {
 
 .contact-address-title {
     font-size: 20px;
-    color: #EB9896;
+    color: #b9a67a;
     ;
 }
 
@@ -3694,7 +3695,7 @@ td.total h6 {
 
 .contact-form input,
 .contact-form textarea {
-    border: 1px solid #EB9896;
+    border: 1px solid #b9a67a;
 }
 
 
@@ -4523,7 +4524,7 @@ a.text-reset {
 .about-clients .owl-nav span {
     position: absolute;
     font-size: 3rem;
-    color: #EB9896;
+    color: #03312B;
     top: 35%;
 }
 
@@ -4737,10 +4738,10 @@ form.form-recuvery {
 }
 
 .single-terms-text i {
-    border: 1px solid #EB9896;
+    border: 1px solid #03312B;
     border-radius: 50%;
     color: #fff;
-    background: #EB9896;
+    background: #03312B;
     height: 16px;
     width: 16px;
     text-align: center;
