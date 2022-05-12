@@ -132,9 +132,6 @@ ol {
     letter-spacing: 0.5px;
     border-radius: 23px;
     -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    -ms-border-radius: 23px;
-    -o-border-radius: 23px;
     cursor: pointer;
 }
 
@@ -1022,7 +1019,7 @@ a.btn-bg{
 
 .lang-form {
     position: absolute;
-    top: 67px;
+    top: 42px;
     left: -250px;
     z-index: 10;
     background: white;
@@ -1124,11 +1121,12 @@ a.btn-bg{
 
 .logo {
     padding: 4px 0px;
+    margin-top: 20px;
 }
 
 .logo a {
     display: inline-block;
-    width: 80px;
+    width: 150px;
 }
 
 .header-search-form {
@@ -1621,25 +1619,6 @@ a.button.btn-cart {
     color: #444;
     padding: 10px;
 }
-
-/* a.button.btn-checkout {
-    background: #03312B;
-    border: 1px solid ;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-} */
-
-/* a.button.btn-checkout:hover {
-    background: transparent;
-    border: 1px solid #03312B;
-    color: #03312B;
-} */
 
 .cart-scroll-content {
     height: 100%;
@@ -2597,7 +2576,7 @@ section.facility-section p {
 /* Footer end */
 
 
-/* ------------------------------------------------Product-Details------------------------------------------------- */
+/* Product-Details */
 
 .product-details-inner {
     padding-top: 50px;
@@ -2741,24 +2720,6 @@ span.single-product-current-price {
     padding-top: 12px;
 }
 
-/* .product-details-cart-button a,
-.product-details-buy-button a {
-    border: 1px solid #03312B;
-    padding: 5px 20px;
-    background: transparent;
-    color: #03312B;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 20px;
-    margin-left: 25px;
-    display: inline-block;
-} */
-/* .product-details-cart-button a,
-.product-details-buy-button a:hover{
-    background: #03312B;
-    color: #fff;
-} */
-
 .product-details-buy-button a {
     margin-left: 0px !important;
 }
@@ -2767,7 +2728,6 @@ span.single-product-current-price {
     font-weight: 700;
     color: #000;
 }
-
 
 /* Quantity */
 
@@ -3048,7 +3008,9 @@ button.btn-close {
     width: 30px;
     font-size: 25px;
 }
-
+.width-30{
+    width: 40%
+}
 
 /* Product Details page end */
 
@@ -3074,39 +3036,25 @@ input.input-coupon {
 
 .checkout-content .content-btn,
 .checkout-content a {
-    color: #2d2a2a !important;
     font-size: 16px;
     display: block;
-    text-decoration: none !important;
     text-align: center;
 }
 
 .checkout-content .content-btn,
 .checkout-content span {
-    color: #EB9896;
+    color: #000;
     font-weight: 600;
     font-family: 'Lato';
     text-decoration: underline;
 }
-
-/* a.orderBtn-round {
-    border: 1px solid #EB9896;
-    padding: 8px 30px;
-    border-radius: 22px;
-    margin-top: 8px;
-    display: inline-block;
-    color: #fff;
-    background: #EB9896;
-    font-weight: 600;
-    text-transform: uppercase;
-} */
 
 .collapse-down-area {
     margin-top: 1.5rem;
 }
 
 .collapse-down-area-content {
-    border: 1px solid #EB9896;
+    border: 1px solid #b9a67a;
 }
 
 .checkout-info p {
@@ -3141,14 +3089,14 @@ input.input-coupon {
 .checkout-login-form input {
     width: 100%;
     height: 46px;
-    border: 1px solid #EB9896;
+    border: 1px solid #b9a67a;
     margin-bottom: 25px;
     padding-left: 15px;
     border-radius: 22px;
 }
 
 .checkout-info input {
-    border: 1px solid #EB9896;
+    border: 1px solid #b9a67a;
     border-radius: 20px;
     padding: 7px 15px;
 }
@@ -3160,20 +3108,10 @@ input.input-coupon {
     padding-left: 24px;
     border-radius: 22px;
     margin-bottom: 16px;
-}
-
-a.button.ckeckout-login-button {
-    border: 1px solid #83B73B;
-    padding: 8px;
-    border-radius: 22px;
-    background: #83B73B;
-    color: #fff !important;
-    font-weight: 600;
-    font-family: 'Lato';
-    font-size: 16px;
+}                                                             
+.checkout-btn{
     margin: 20px auto;
     width: 40%;
-    cursor: pointer;
 }
 
 .login-varification {
@@ -3184,7 +3122,7 @@ a.button.ckeckout-login-button {
     font-size: 14px;
     position: absolute;
     right: 14px;
-    color: #EB9896 !important;
+    color: #03312B !important;
     font-weight: 600;
     font-family: 'Lato';
 }
@@ -3198,22 +3136,6 @@ a.button.ckeckout-login-button {
     background: #03312B;
     ;
 }
-
-/* button.copponBtn-round {
-    padding: 7px 42px;
-    border: 1px solid #03312B;
-    border-radius: 20px;
-    background: #03312B;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    cursor: pointer;
-    margin-top: 12px;
-} */
 
 .billing-information {
     border: 1px solid;
@@ -3246,7 +3168,7 @@ p.checkout-info-msg {
     border: 1px solid;
     padding: 15px;
     text-align: center;
-    background: #EB9896;
+    background: #03312B;
     color: #fff;
     border-radius: 5px;
     font-weight: 500;
@@ -3259,29 +3181,12 @@ p.checkout-info-msg {
 }
 
 .button-checkoutpage a {
-    border: 1px solid #EB9896;
-    background: #EB9896;
+    border: 1px solid #03312B;
+    background: #03312B;
     color: #fff;
     padding: 9px 24px;
     border-radius: 23px;
 }
-
-/* button.submitBtn-round {
-    width: 40%;
-    padding: 7px 0px;
-    background: #EB9896;
-    font-size: 16px;
-    color: #fff;
-    border: 1px solid #EB9896;
-    border-radius: 23px;
-    font-family: 'Lato';
-    font-weight: 600;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    -ms-border-radius: 23px;
-    -o-border-radius: 23px;
-    cursor: pointer;
-} */
 
 .checkout-section {
     padding-bottom: 80px;
@@ -3304,7 +3209,6 @@ p.checkout-info-msg {
     position: relative;
     margin-bottom: 0;
     vertical-align: top;
-    padding-left: 28px;
     padding-top: 3px;
 }
 
@@ -3443,6 +3347,7 @@ p.checkout-info-msg {
 
 .checkout-form .place-order .order-total .order-btn {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .checkout-form .place-order .order-total .order-btn .place-btn {
@@ -3469,22 +3374,6 @@ p.checkout-info-msg {
     margin: 10px auto;
 }
 
-/* button.createBtn-round {
-    padding: 7px 35px;
-    border: 1px solid #EB9896;
-    border-radius: 20px;
-    float: right;
-    background: #EB9896;
-    color: #fff;
-    font-weight: 600;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    cursor: pointer;
-} */
-
 .billing-section {
     margin-top: 4rem;
 }
@@ -3499,8 +3388,11 @@ a.content-btn {
 }
 
 a.content-btn span {
-    color: #EB9896;
+    color: #03312B;
     text-decoration: underline;
+}
+a.content-btn span:hover {
+    color: #F7847E;
 }
 
 div#multiCollapseExamplegift {
@@ -3610,36 +3502,6 @@ li.entry.value-minus i {
     color: #000;
 }
 
-/* button.shoppingBtn-round {
-    border: 1px solid #03312B;
-    padding: 10px 20px;
-    margin: 0 auto;
-    background: #03312B;
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    border-radius: 23px;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    -ms-border-radius: 23px;
-    -o-border-radius: 23px;
-    cursor: pointer;
-} */
-
-/* a.copponBtn2-round {
-    border: 1px solid #03312B;
-    padding: 10px 30px;
-    background: transparent;
-    color: #03312B;
-    font-weight: 600;
-    border-radius: 23px;
-    -webkit-border-radius: 23px;
-    -moz-border-radius: 23px;
-    -ms-border-radius: 23px;
-    -o-border-radius: 23px;
-} */
-
 .single-cart-product-price p,
 .single-cart-product-subtotal-price p {
     margin-top: 1.5rem;
@@ -3714,25 +3576,6 @@ td.total h6 {
     font-weight: 700;
     color: #000;
 }
-
-/* button.processBtn-round {
-    border: 1px solid #03312B;
-    padding: 10px 20px;
-    margin: 0 auto;
-    background: #03312B;
-    color: #fff;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    border-radius: 21px;
-    -webkit-border-radius: 21px;
-    -moz-border-radius: 21px;
-    -ms-border-radius: 21px;
-    -o-border-radius: 21px;
-    cursor: pointer;
-} */
-
 .process-btn {
     text-align: center;
     margin-bottom: 1rem;
@@ -3790,18 +3633,6 @@ td.total h6 {
     color: red;
     margin: 2px;
 }
-
-/* button.comntactBtn-round {
-    color: #fff;
-    font-weight: 600;
-    background: #EB9896;
-    padding: 8px 49px;
-    border: 1px solid #EB9896;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
-} */
-
 .contact-form button:hover {
     color: #fff;
 }
@@ -3823,7 +3654,7 @@ td.total h6 {
 
 .contact-address-title {
     font-size: 20px;
-    color: #EB9896;
+    color: #b9a67a;
     ;
 }
 
@@ -3864,7 +3695,7 @@ td.total h6 {
 
 .contact-form input,
 .contact-form textarea {
-    border: 1px solid #EB9896;
+    border: 1px solid #b9a67a;
 }
 
 
@@ -3900,34 +3731,6 @@ td.total h6 {
     font-family: 'Lato';
     letter-spacing: 0.5px;
 }
-/* 
-.gretingsBtn a {
-    border: 1px solid rgb(131, 183, 53);
-    padding: 10px 20px;
-    background: rgb(131, 183, 53);
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: Lato;
-    font-size: 15px;
-    border-radius: 20px;
-} */
-/* 
-.gretingsBtn {
-    padding-top: 25px;
-} */
-/* 
-.gretingsBtn2 {
-    padding-top: 18px;
-}
-
-.gretingsBtn2 a {
-    padding-top: 18px;
-    color: #EB9896;
-    font-weight: 700;
-    text-decoration: underline;
-} */
-
 .gretings-text-des span a {
     color: #EB9896;
     font-weight: 700;
@@ -3936,8 +3739,6 @@ td.total h6 {
 .bar-icon-thank-you {
     padding-top: 25px !important;
 }
-
-
 /* --------------------------Thank You page end------------------------ */
 
 
@@ -4661,14 +4462,9 @@ a.text-reset {
 .pagination li.active a.page-link:after {
     opacity: 0;
 }
-
-
 /* --------Blog page end ----------*/
 
-
-/*******************************
-	breadcumb css
-*******************************/
+/* breadcumb */
 
 .ta-breadcumb {
     padding: 20px 0px
@@ -4728,7 +4524,7 @@ a.text-reset {
 .about-clients .owl-nav span {
     position: absolute;
     font-size: 3rem;
-    color: #EB9896;
+    color: #03312B;
     top: 35%;
 }
 
@@ -4873,17 +4669,6 @@ form.form-recuvery {
     padding: 30px 50px;
 }
 
-/* button.recuveryBtn-round {
-    border: 1px solid #EB9896;
-    padding: 8px 38px;
-    border-radius: 22px;
-    background: #EB9896;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    cursor: pointer;
-} */
-
 .backto-login {
     display: flex;
     justify-content: center;
@@ -4953,10 +4738,10 @@ form.form-recuvery {
 }
 
 .single-terms-text i {
-    border: 1px solid #EB9896;
+    border: 1px solid #03312B;
     border-radius: 50%;
     color: #fff;
-    background: #EB9896;
+    background: #03312B;
     height: 16px;
     width: 16px;
     text-align: center;
@@ -4971,6 +4756,4 @@ form.form-recuvery {
 .single-terms-text {
     padding: 10px 0px;
 }
-
-
 /* ------Terms and conditon end------- */
