@@ -204,8 +204,8 @@
                                         </table>
                                     </div>
                                     <div class="cart-details-button">
-                                        <a href="cart.html" class="button-round btn-transparent">View cart</a>
-                                        <a href="checkout.html" class="button-round btn-bg">Checkout</a>
+                                        <a href="cart.html" class="button btn-cart">View cart</a>
+                                        <a href="checkout.html" class="button btn-ui">Checkout</a>
                                     </div>
                                 </div>
                             </ul>
@@ -535,7 +535,7 @@
                             <div class="col-lg-1 col-md-2 col-sm-4 ">
                                 <div class="logo">
                                     <a href="./index.html" class="site-logo">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="img/footer-logo.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -816,7 +816,7 @@
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-12" id="cartId" style="display:none">
-                                <div class=" user-panel user-panel1">
+                                <div class="header-action">
                                     <ul>
                                         <li class="action-nav-list">
                                             <a href="login.html">
@@ -1283,7 +1283,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <div class="user-panel">
+                                <div class="header-action">
                                     <ul class="action-nav">
                                         <li class="action-nav-list">
                                             <a href="login.html">
@@ -1418,30 +1418,20 @@
                                                 <div class="card card-body collapse-down-area-content">
                                                     <div class="checkout-info">
                                                         <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section.</p>
-                                                        <form action="#">
-                                                            <div class="row">
-                                                                <div class="col-lg-12 form-input-field">
-                                                                    <label for="username">Username or Email<span>*</span></label>
-                                                                    <input type="text" class="form-control" required>
-                                                                </div>
-
-                                                                <div class="col-lg-12 form-input-field">
-                                                                    <label for="pass">Password<span>*</span></label>
-                                                                    <input type="password" class="form-control" required>
-                                                                </div>
-                                                                <div class="col-lg-12">
-                                                                    <a href="#" class="button-round btn-bg width-30">Submit</a>
-                                                                </div>
-                                                                <div class="col -6 col-sm-6 login-varification">
-                                                                    <div class="custom-control custom-checkbox">
-                                                                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked3">
-                                                                        <label class="custom-control-label" for="defaultUnchecked3"> Remembar Me </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col -6 col-sm-6 login-varification">
-                                                                    <a href="">Forget Password?</a>
-                                                                </div>
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="email">Email address<span>*</span></label>
+                                                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                                                             </div>
+                                                            <div class="form-group">
+                                                                <label for="password">Password<span>*</span></label>
+                                                                <input type="password" class="form-control" id="password">
+                                                            </div>
+                                                            <div class="form-group form-check">
+                                                                <input type="checkbox" class="form-check-input" id="checkbox"/>
+                                                                <label class="form-check-label" for="checkbox">Remembar Me</label>
+                                                            </div>
+                                                            <button type="submit" class="button button-sqr btn-transparent">Submit</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -1455,8 +1445,8 @@
                                     <div class="collapse collapse-down-area  checkout-info" id="multiCollapseExample2">
                                         <div class="card card-body collapse-down-area-content">
                                             <form action="#">
-                                                <input placeholder="Coupon code " type="text " class="input-coupon">
-                                                <a href="" class="button-round btn-bg width-30 mt-3">Apply</a>
+                                                <input placeholder="Coupon code" type="text" class="form-control"/>
+                                                <button type="submit" class="button button-sqr btn-transparent mt-4">Apply</button>
                                             </form>
                                         </div>
                                     </div>
@@ -1465,47 +1455,47 @@
                                     <h4>Biiling Details</h4>
                                     <div class="billing-information">
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-md-6">
                                                 <label for="first">First Name<span>*</span></label>
                                                 <input type="text" id="fir">
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-md-6">
                                                 <label for="last">Last Name<span>*</span></label>
                                                 <input type="text" id="last">
                                             </div>
-                                            <div class="col-lg-12">
-                                                <label for="district">District<span>*</span></label><br>
+                                            <div class="col-md-6">
+                                                <label for="district">District<span>*</span></label>
                                                 <select id="district">
-                                                    <option class="custom-select" value="dhaka" selected>Dhaka</option>
-                                                    <option value="ctg">Chittagong</option>
-                                                    <option value="cumilla">Cumilla</option>
-                                                    <option value="khalna">Khulna</option>
-                                                    <option value="barishal">Barishal</option>
-                                                    <option value="rajshahi">Rajshahi</option>
-                                                    <option value="chandpur">Chandpur</option>
-                                                </select>
+                                                  <option class="custom-select" value="dhaka" selected>Dhaka</option>
+                                                  <option value="ctg">Chittagong</option>
+                                                  <option value="cumilla">Cumilla</option>
+                                                  <option value="khalna">Khulna</option>
+                                                  <option value="barishal">Barishal</option>
+                                                  <option value="rajshahi">Rajshahi</option>
+                                                  <option value="chandpur">Chandpur</option>
+                                              </select>
                                             </div>
-                                            <div class="col-lg-12">
+                                            <div class="col-md-6">
                                                 <label for="cun">Country<span>*</span></label>
                                                 <input type="text" id="cun">
                                             </div>
-                                            <div class="col-lg-12">
+                                            <div class="col-md-6">
                                                 <label for="street">Street Address<span>*</span></label>
                                                 <input type="text" id="street" placeholder="House number and steet name" class="street-first">
                                             </div>
-                                            <div class="col-lg-12">
+                                            <div class="col-md-6">
                                                 <label for="email">Email Address (Optional)</label>
                                                 <input type="text" id="email">
                                             </div>
-                                            <div class="col-lg-12">
+                                            <div class="col-md-6">
                                                 <label for="phone">Phone<span>*</span></label>
                                                 <input type="text" id="phone">
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-md-6">
                                                 <label for="town">Town / City<span>*</span></label>
                                                 <input type="text" id="town">
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-md-6">
                                                 <label for="zip">Postcode / ZIP (optional)</label>
                                                 <input type="text" id="zip">
                                             </div>
@@ -1514,7 +1504,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                  </div>
 
                                 <div class="checkout-gift-address d-none d-lg-block">
                                     <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
@@ -1527,7 +1517,7 @@
                                                         <form action="#">
                                                             <label for="pass">Create account password<span>*</span></label>
                                                             <input type="password" class="form-control" required>
-                                                            <a href="#" class="button-round btn-bg btn-small">Create</a>
+                                                            <a href="#" class="button button-round btn-transparent mt-2">Create</a>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -1623,8 +1613,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="order-btn">
-                                            <a href="thankyou.html" class="button-round btn-transparent">PLace Order</a></a>
+                                        <div class="order-btn ">
+                                            <a href="thankyou.html" class="button button-round btn-transparent" > PLace Order</a></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1653,6 +1643,7 @@
                             <a href="cart.html" class="button">Back to cart</a>
                         </div>
                     </form>
+
                 </div>
             </section>
 
@@ -1662,10 +1653,10 @@
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 footer-contact">
                                 <img src="img/footer-logo.png" alt="">
-                                <p class="mt-2">
-                                    Holding #373 Elephant Road, <br> Dhaka 1205<br><br>
-                                    <strong>Phone:</strong> +880 1701290756<br>
-                                    <strong>Email:</strong> info@domain.com<br>
+                                <p class="mt-3">
+                                    211 Lakewood Dr, USA <br/>
+                                    <strong>Phone:</strong> +00 879 567 0092<br/>
+                                    <strong>Email:</strong> info@domain.com<br/>
                                 </p>
                             </div>
                             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 footer-links">
@@ -1704,7 +1695,7 @@
                         <div class="d-md-flex py-2">
                             <div class="mr-md-auto text-center text-md-left">
                                 <div class="copyrights">
-                                    <strong>Copyright &copy;2022</strong>
+                                    <strong>Copyright &copy;2022 Skin Care</strong>
                                 </div>
                             </div>
                             <div class="social-links text-center text-md-right pt-3 pt-md-0">
